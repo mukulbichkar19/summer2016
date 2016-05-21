@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+
 
   "name": "web-dev",
   "version": "1.0.0",
@@ -18,8 +18,6 @@
   "author": "Jose G. Annunziato",
   "license": "ISC"
 
-=======
->>>>>>> cea24781be62349e8eed405c4cdb66e364903234
   "name": "OpenShift-Sample-App",
   "version": "1.0.0",
   "description": "OpenShift Sample Application",
@@ -45,20 +43,16 @@
     "npm": ">= 1.0.0"
   },
 
-<<<<<<< HEAD
-  
-=======
+
   "dependencies": {
     "express": "~3.4.4"
   },
->>>>>>> cea24781be62349e8eed405c4cdb66e364903234
+
   "devDependencies": {},
   "bundleDependencies": [],
 
   "private": true,
   "main": "server.js"
-<<<<<<< HEAD
 
-=======
->>>>>>> cea24781be62349e8eed405c4cdb66e364903234
+
 }
