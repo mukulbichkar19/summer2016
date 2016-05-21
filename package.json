@@ -1,6 +1,4 @@
 {
-
-
   "name": "web-dev",
   "version": "1.0.0",
   "description": "Web Dev at Northeastern University",
@@ -17,42 +15,4 @@
   },
   "author": "Jose G. Annunziato",
   "license": "ISC"
-
-  "name": "OpenShift-Sample-App",
-  "version": "1.0.0",
-  "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
-  "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
-  },
-  "homepage": "http://www.openshift.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
-
-  "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
-  },
-
-
-  "dependencies": {
-    "express": "~3.4.4"
-  },
-
-  "devDependencies": {},
-  "bundleDependencies": [],
-
-  "private": true,
-  "main": "server.js"
-
-
 }
