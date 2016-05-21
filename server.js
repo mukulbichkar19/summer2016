@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 var express = require('express');
 var app = express();
@@ -16,6 +17,8 @@ var port      = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 
 app.listen(port, ipaddress);
 
+=======
+>>>>>>> cea24781be62349e8eed405c4cdb66e364903234
 #!/bin/env node
 //  OpenShift sample Node application
 var express = require('express');
@@ -175,4 +178,7 @@ var zapp = new SampleApp();
 zapp.initialize();
 zapp.start();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cea24781be62349e8eed405c4cdb66e364903234
