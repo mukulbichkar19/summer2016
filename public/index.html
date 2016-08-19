@@ -3,7 +3,7 @@
 <html lang="en" class="ie9">
 <html lang="en">
 <head>
-    <title>Mukul Bichkar</title>
+    <title>Mukul Bichkar Website</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,32 +48,7 @@
     </script><!-- End of Google Analytics Page -->
 
  
-    <script type="text/javascript" charset="utf-8">
-        // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
-            $("#trailer-video-container").empty();
-        });
-        // Start playing the video whenever the trailer modal is opened
-        $(document).on('click', '.movie-tile', function (event) {
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
-              'src': sourceUrl,
-              'frameborder': 0
-            }));
-        });
-        // Animate in the movies when the page loads
-        $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
-            $(this).next("div").show("fast", showNext);
-          });
-        });
-    </script>
-
+     
     
 
 </head>
@@ -636,7 +611,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
 <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
 <!-- custom js -->
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" async src="assets/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" async src="assets/js/video-player.js"></script>
 </body>
 </html>
 
