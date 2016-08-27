@@ -37,9 +37,18 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"> -->
    <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
 <script type="text/javascript" async src="assets/plugins/github-activity/src/github-activity.js"></script> -->
+<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript"  src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+<!-- github calendar plugin -->
+<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+<script type="text/javascript"  src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+<script type="text/javascript"  src="assets/plugins/github-activity/src/github-activity.js"></script>
 <!-- custom js -->
-<!--script type="text/javascript" charset="utf-8" src="assets/js/video-player.js"></script-->
-
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="assets/js/video-player.js"></script>
 
     <!-- Adding Google Analytics -->
     <script>
@@ -52,32 +61,6 @@
     ga('send', 'pageview');
     </script>
     <!-- End of Google Analytics Page -->
-
-     <script type="text/javascript" charset="utf-8">		     
-        // Pause the video when the modal is closed		
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {		
-            // Remove the src so the player itself gets removed, as this is the only		
-            // reliable way to ensure the video stops playing in IE		
-            $("#trailer-video-container").empty();		
-        });		
-        // Start playing the video whenever the trailer modal is opened		
-        $(document).on('click', '.movie-tile', function (event) {		
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')		
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';		
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {		
-              'id': 'trailer-video',		
-              'type': 'text-html',		
-              'src': sourceUrl,		
-              'frameborder': 0		
-            }));		
-        });		
-        // Animate in the movies when the page loads		
-        $(document).ready(function () {		
-          $('.movie-tile').hide().first().show("fast", function showNext() {		
-            $(this).next("div").show("fast", showNext);		
-          });		
-        });		
-    </script>
 
  
      
@@ -650,13 +633,8 @@
                                 Learn Bash Shell in Linux for Beginners
                             </a>
                             </li>
-                            <li>
-                            	<i class="fa fa-book"></i>
-                            	 <a href="https://drive.google.com/file/d/0BzhJtAIKBDnMNlJhYkh3SEM1b28/view?usp=sharing" target="_blank">
-                            	Up and Running with Python, Django
-                            	</a>
-                            </li>
-                            <!--li><i class="fa fa-book"></i> <a href="" target="_blank">Coming Soon 4</a></li-->
+                            <!--li><i class="fa fa-book"></i> <a href="" target="_blank">Coming Soon 3</a></li>
+                            <li><i class="fa fa-book"></i> <a href="" target="_blank">Coming Soon 4</a></li-->
                         </ul>
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -690,19 +668,8 @@
 
 <!-- Javascript -->
  
-<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>		 
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>		
-<script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>		
-<!-- github calendar plugin -->		
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>		
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>		
-<script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
 <!-- github activity plugin -->
 <!--  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script> -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>		
-<script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>		
-<!-- custom js -->
-<script type="text/javascript" src="assets/js/main.js"></script>
 
 
 

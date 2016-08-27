@@ -3,18 +3,16 @@
 <html lang="en" class="ie9">
 <html lang="en">
 <head>
-    <title>Mukul Bichkar Website</title>
+    <title>Mukul Bichkar</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
     <meta name="author" content="Mukul Bichkar">
-    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
@@ -35,52 +33,71 @@
 <!-- 
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"> -->
-   <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
-<script type="text/javascript" async src="assets/plugins/github-activity/src/github-activity.js"></script> -->
-<!-- custom js -->
-<!--script type="text/javascript" charset="utf-8" src="assets/js/video-player.js"></script-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
 
-    <!-- Adding Google Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- <style>
+     #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
 
-    ga('create', 'UA-82287110-1', 'auto');
-    ga('send', 'pageview');
+      .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+      .movie-tile:hover {
+            cursor: pointer;
+        }
+      .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+         .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+
+
+ </style>
+
+
+ -->
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
     </script>
-    <!-- End of Google Analytics Page -->
 
-     <script type="text/javascript" charset="utf-8">		     
-        // Pause the video when the modal is closed		
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {		
-            // Remove the src so the player itself gets removed, as this is the only		
-            // reliable way to ensure the video stops playing in IE		
-            $("#trailer-video-container").empty();		
-        });		
-        // Start playing the video whenever the trailer modal is opened		
-        $(document).on('click', '.movie-tile', function (event) {		
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')		
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';		
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {		
-              'id': 'trailer-video',		
-              'type': 'text-html',		
-              'src': sourceUrl,		
-              'frameborder': 0		
-            }));		
-        });		
-        // Animate in the movies when the page loads		
-        $(document).ready(function () {		
-          $('.movie-tile').hide().first().show("fast", function showNext() {		
-            $(this).next("div").show("fast", showNext);		
-          });		
-        });		
-    </script>
-
- 
-     
     
 
 </head>
@@ -168,91 +185,38 @@
                 <div class="section-inner">
                     <h2 class="heading">Latest Projects</h2>
                     <div class="content">
-						<!-- Smart Chef App -->
+
                         <div class="item featured text-center">
-                            <h3 class="title">Smart Chef</h3>
-                            <h4><p class="summary">Winner for Best Overall App at AT&T Hackathon</p></h4>
+                            <h3 class="title">All About Cars</h3>
+                            <p class="summary">A website which tries to answer all your queries related to buying, selecting a car</p>
                             <div class="featured-image">
-                                
-                                    <img class="img-responsive project-image" src="assets/images/smartchefapp.jpg" alt="project name"/>
-                            
-                        	</div>
-
-                                
-                     	</div>
-
-                        <div class="desc text-left">
-                                <p>
-                                	Designed a mobile first interactive website that allows users to search for the favorite recipes by name, cuisine and by the ingredients available in their kitchen.
-                             		The app provides detailed recipe procedure for selected recipe with speech and video assistance.
-                                </p>
-                        </div><!--//desc-->
-
-                        
-                            
-                           <!--//item-->
-                        <div style="text-align:center;padding-top:10px">
-                            <a class="btn btn-cta-secondary" href="https://github.ccs.neu.edu/mukul1992/SmartChefApp" target="_blank"><i class="fa fa-github"></i> View on GitHub</a>
-                        </div>
-                            <!-- <div class="movie-tile text-center" style="text-align:center"
-                            data-trailer-youtube-id="DMMk3lWUdOE" data-toggle="modal" data-target="#trailer">
-                            <a class="btn btn-cta-secondary"><i class="fa fa-play"></i><text id="Change"> Play Project Video</text></a>
-                            </div><!//item --> 
-                            <!-- <div style="text-align:center;padding-top:10px" class="col-md-4">
-                            <a class="btn btn-cta-secondary" href="https://youtu.be/DMMk3lWUdOE" target="_blank"><i class="fa fa-youtube"></i> View on YouTube</a>
-                            </div> -->
-
-                            <!-- <div style="text-align:center" class="col-md-4">
-                            <a href='https://play.google.com/store/apps/details?id=com.mukul.android.germanessentials&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="220" height="60" /></a>
-                            </div> -->
-
-
-                           
-                            
-
-                    <hr class="divider" />
-
-
-
-
-
-
-
-
-
-
-                    <!-- Start of All About Cars App-->
-                    <div class="item featured text-center">
-                        <h3 class="title">All About Cars</h3>
-                        <p class="summary">A website which tries to answer all your queries related to buying, selecting a car</p>
-                        <div class="featured-image">
                                  <!--Need to add Openshift link of project -->
-                        <img class="img-responsive project-image" src="assets/images/projects/project-1.jpg" alt="project name" />
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-1.jpg" alt="project name" />
                                 
                             
-                        </div>
-                           
-                    </div>
+                            </div>
+                                <!--<div class="ribbon">
+                                    </div>-->
+                            </div>
 
-                        <div class="desc text-left">
-                            <p>It's a MEAN Stack application which is mobile responsive.</p>
-                            <p>In this application one can search for a new car, obtain information related to pricing along with year wise
-                            analysis, read reviews about cars from experts as well as other users, get information about dealers, repairshops and their reviews.
-                            Users' can register themselves, login, follow other users, write reviews about cars.
-                            </p>
-                        </div><!--//desc-->
-                        <div class="col-md-6  movie-tile text-center"
-                           style="padding-top:10px">
-                        <a class="btn btn-cta-secondary" href="https://github.com/ukulbichkar19/WebDevSpring2016.git" target="_blank"><i class="fa fa-github"></i> View on GitHub</a>
-                        </div>
-                        <div class="col-md-6 movie-tile text-center" data-trailer-youtube-id="3s3Dw5YmIw4" data-toggle="modal" data-target="#trailer" style="padding-top:10px">
+                            <div class="desc text-left">
+                                <p>It's a MEAN Stack application which is mobile responsive.</p>
+                                <p>In this application one can search for a new car, obtain information related to pricing along with year wise
+                                    analysis, read reviews about cars from experts as well as other users, get information about dealers, repairshops and their reviews.
+                                    Users' can register themselves, login, follow other users, write reviews about cars.
+                                </p>
+                            </div><!--//desc-->
+                            <div class="col-md-6  movie-tile text-center"
+                            style="padding-top:10px">
+                            <a class="btn btn-cta-secondary" href="https://github.com/mukulbichkar19/WebDevSpring2016.git" target="_blank"><i class="fa fa-github"></i> View on GitHub</a>
+                            </div>
+                             <div class="col-md-6 movie-tile text-center" data-trailer-youtube-id="3s3Dw5YmIw4" data-toggle="modal" data-target="#trailer"
+                             style="padding-top:10px">
                             <a class="btn btn-cta-secondary"><i class="fa fa-play"></i><text id="Change"> Play Project Video</text></a>
-                        </div><!--//item-->
-                        <hr class="divider"/>
-                       
-                        <!-- End of All About Cars App-->
+                            </div><!--//item-->
+                        <hr class="divider" />
 
-                        <!-- Android Essential German App -->
+                        <!-- Android Essential Gernman App -->
 
                          <div class="item featured text-center">
                             <h3 class="title">German Essential</h3>
@@ -260,23 +224,25 @@
                             essential english words and its equivalent in German along with Pronunciation</p>
                             <div class="featured-image">
                                 
-                                    <img class="img-responsive project-image" src="assets/images/android-lowest.jpg" alt="Essential German"/>
+                                    <img class="img-responsive project-image" src="assets/images/android_german.jpg" alt="Essential German"/>
                             
                             </div>
 
                                 
-                        </div>
+                            </div>
 
-                        <div class="desc text-left">
+                            <div class="desc text-left">
                                 <p>In this application one can find the essential english words along with its german translation and also listen to
                                 pronunciation of the equivalent german word.
                                 Implemented Recycler Views, ArrayAdapter, MediaPlayer,Explicit Intents.
                                 </p>
-                         </div><!--//desc-->
+                            </div><!--//desc-->
 
                             </br>
                             
-                           <!--//item-->
+                             <div class="movie-tile text-center" data-trailer-youtube-id="DMMk3lWUdOE" data-toggle="modal" data-target="#trailer">
+                            <a class="btn btn-cta-secondary"><i class="fa fa-play"></i><text id="Change"> Play Project Video</text></a>
+                            </div><!--//item-->
                             <div style="text-align:center;padding-top:10px" class="col-md-4">
                             <a class="btn btn-cta-secondary" href="https://github.com/mukulbichkar19/GermanEssentials" target="_blank"><i class="fa fa-github"></i> View on GitHub</a>
                             </div>
@@ -285,7 +251,7 @@
                             <a class="btn btn-cta-secondary"><i class="fa fa-play"></i><text id="Change"> Play Project Video</text></a>
                             </div><!//item --> 
                             <div style="text-align:center;padding-top:10px" class="col-md-4">
-                            <a class="btn btn-cta-secondary" href="https://youtu.be/DMMk3lWUdOE" target="_blank"><i class="fa fa-youtube"></i> View on YouTube</a>
+                            <a class="btn btn-cta-secondary" href="" target="_blank"><i class="fa fa-youtube"></i> View on YouTube</a>
                             </div>
 
                             <div style="text-align:center" class="col-md-4">
@@ -295,9 +261,8 @@
 
                            
                             
-						
-                        <hr class="divider" />
 
+                            <hr class="divider" />
 
                              
                         
@@ -319,10 +284,8 @@
                                 <h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">
                                     Form Maker
                                 </a></h3>
-                                <p>Developed a mobile friendly, interactive website that allowed users to register themselves, login and create forms quite similar to google forms.
-                                Implemented a directive that enabled users to sort the fields within a form.
-                                </p>
-                                <p><a class="more-link" href="">
+                                <p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+                                <p><a class="more-link" href="link to openshift" target="_blank">
                                     <i class="fa fa-external-link"></i>
                                     Find out more
                                 </a> <!-- need to add openshift link -->
@@ -379,25 +342,24 @@
                     <h2 class="heading">Work Experience</h2>
                     <div class="content">
                     <!-- RA Volunteer -->
+                      <div class="item">
+                            <h3 class="title">Graduate Research Assistant- <span class="place"><a href="#">CTNI Lab, Northeastern University</a></span> <span class="year">(2016 - Present) [Volunteer]</span></h3>
+                            <p>Develop MATLAB code to convert images into multiple pre-clinical formats (e.g. Nifty, Bruker, Dicom) that facilitates better hypothesis and obtain precise results.</p>
+                        </div><!--//item -->
 
                         <div class="item">
-                            <h3 class="title">Teaching Assistant - Computer Science and Its Applications -<span class="place"><a href="#">Northeastern University, Boston, MA</a></span> <span class="year">(Jan 2016 - Present)</span></h3>
+                            <h3 class="title">Teaching Assitant - <span class="place"><a href="#">Northeastern University</a></span> <span class="year">(2016 - Present)</span></h3>
                             <p>
-                                My responsibilities include guiding students through their course structure,                              answering their doubts, conducting tutoring sessions, assisting students with laboratory sessions and grading the assignments.
+                                My responsibilities include guiding students through their course structure,
+                                answering their doubts, conducting tutoring sessions, assisting students with laboratory sessions and grading the assignments.
                                 Helped students in installing Virtual Box on a Mac that enabled them to use Windows alongside Mac which facilitated the students to use Microsoft Access on a Mac.</p>
                                 <a href="https://drive.google.com/a/husky.neu.edu/file/d/0Bx1paMCVjXPhN0FnVkV1RVFEbGM/view?usp=sharing" target="_blank">  <i class="fa fa-external-link"></i>
                                     Find out more</a>
 
                             
                         </div><!--//item-->
-
                         <div class="item">
-                            <h3 class="title">Graduate Research Assistant- <span class="place"><a href="#">CTNI Lab, Northeastern University,Boston, MA</a></span> <span class="year">(May - June 2016) </span></h3>
-                            <p>Developed MATLAB code to convert images into multiple pre-clinical formats (e.g. Nifty, Bruker, Dicom) that facilitated better hypotheses and obtain precise results.</p>
-                        </div><!--//item -->
-
-                        <div class="item">
-                            <h3 class="title">Programmer Analyst Trainee - <span class="place"><a href="#">Cognizant Technology, Pune, India</a></span> <span class="year">(Nov 2014 - June 2015)</span></h3>
+                            <h3 class="title">Programmer Analyst Trainee - <span class="place"><a href="#">Cognizant Technology</a></span> <span class="year">(2014 - 2015)</span></h3>
                             <p>
                                 Tested Systems Application Products in Data Processing (SAP) product for Materials Management, Procurement, and Finance Modules.
                                 Automated test cases and improved the execution time of test cases by 35%.
@@ -568,7 +530,7 @@
                          <p>This responsive portfolio template is handcrafted by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> under the <a class="dotted-link" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a></p>
                          <p>We will improve or add new features to this template based on users' feedback so follow us on twitter to get notified when a new version is out!</p>
                         <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i> Follow us</a -->
-                        <a class="btn btn-ctb-primary btn-download" href="https://drive.google.com/uc?export=download&id=0BzhJtAIKBDnMV1dWUGhzclF0UlE"><i class="fa fa-download"></i>Download </a>
+                        <a class="btn btn-ctb-primary btn-download" href="https://drive.google.com/file/d/0BzhJtAIKBDnMRkNpWmFhZW9EMXM/view?usp=sharing" target="_blank"><i class="fa fa-download"></i>Download </a>
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </aside><!--//section-->
@@ -650,13 +612,8 @@
                                 Learn Bash Shell in Linux for Beginners
                             </a>
                             </li>
-                            <li>
-                            	<i class="fa fa-book"></i>
-                            	 <a href="https://drive.google.com/file/d/0BzhJtAIKBDnMNlJhYkh3SEM1b28/view?usp=sharing" target="_blank">
-                            	Up and Running with Python, Django
-                            	</a>
-                            </li>
-                            <!--li><i class="fa fa-book"></i> <a href="" target="_blank">Coming Soon 4</a></li-->
+                            <!--li><i class="fa fa-book"></i> <a href="" target="_blank">Coming Soon 3</a></li>
+                            <li><i class="fa fa-book"></i> <a href="" target="_blank">Coming Soon 4</a></li-->
                         </ul>
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -689,43 +646,18 @@
 </footer><!--//footer-->
 
 <!-- Javascript -->
- 
-<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>		 
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>		
-<script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>		
-<!-- github calendar plugin -->		
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>		
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>		
+<script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+<!-- github calendar plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
 <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
 <!-- github activity plugin -->
 <!--  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script> -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>		
-<script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>		
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+<script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
 <!-- custom js -->
 <script type="text/javascript" src="assets/js/main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
-
