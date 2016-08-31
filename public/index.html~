@@ -379,8 +379,8 @@
                                 <h3 class="title">
                                     Court Counter
                                 </a></h3>
-                                <p>An android app allows user to enter his name as well as additional toppings like Whipped Cream, Chocolate to the coffee. 
-                                Also, one can select the number of Coffee cups. On pressing Order Button one can generate an email invoice containing relevant details.
+								<p> This App is designed to monitor the scores of a BasketBall Game when either of the team score a free throw worth 1 point or a field                                    goal worth 2 or 3 points.
+
                                 </p>
                                 <p><a class="more-link" href="https://github.com/mukulbichkar19/AndroidApps/tree/master/CourtCounter" target="_blank">
                                     <i class="fa fa-external-link"></i>
