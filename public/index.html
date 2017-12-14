@@ -94,7 +94,7 @@ $(this).next("div").show("fast", showNext);
 <img class="profile-image img-responsive pull-left" src="assets/images/IPL_resized.jpg" alt="Mukul Bichkar" />
 <div class="profile-content pull-left">
 <h1 class="name">Mukul Milind Bichkar</h1>
-<h2 class="desc" style="text-overflow: ellipsis;">Actively Seeking Full Time as a Software Engineer<br>
+<h2 class="desc" style="text-overflow: ellipsis;">Actively Seeking Full Time Position as a Software Engineer<br>
 Starting Jan '18<br>
 </h2>
 <!-- <h2 class="desc">Graduate Student</br>
@@ -129,7 +129,7 @@ target="_blank">
 </ul>
 </div><!--//profile-->
 <!--<a class="btn btn-cta-primary pull-right" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>-->
-<a class="btn btn-cta-primary pull-right" href="mailto:bichkar.m@husky.neu.edu" target="_blank"><em class="fa fa-paper-plane"></em> Contact Me</a>
+<a class="btn btn-cta-primary pull-right" href="mailto:mukulbichkargrad@gmail.com" target="_blank"><em class="fa fa-paper-plane"></em> Contact Me</a>
 </div><!--//container-->
 </header><!--//header-->
 
@@ -143,10 +143,11 @@ target="_blank">
 <h2 class="heading">About Me</h2>
 <div class="content">
 <p>
-  I am a graduate Student at Northeastern University, Boston. I am pursuing my Master's in computer Science.
-  I am currently working as a Cloud Software Engineer Co-Op at New York Labs. We at New York Labs are developing cutting edge
-  cloud applications and trying to automate most of the insurance stuff. I am using Angular 2,
-  Amazon Web Services like Lambda functions, Dynamo DB and GraphQL and also using serverless architecture.
+  I am a recent graduate from Northeastern University with a Master's degree in Computer Science.
+  I am currently looking for full time opportunities as a Software Engineer.
+  For my co-op,I worked as a Cloud Software Engineer Co-Op at New York Life Insurance Labs. Here, I developed cutting edge
+  cloud applications and trying to automate most of the insurance stuff. I used an array of technologies including Angular 2,
+  Amazon Web Services like Lambda functions, Dynamo DB and GraphQL and serverless architecture.
   I like to learn new technology and always focus on the learning curve. For me, the journey is equally as important,as
   the destination. Apart from studies, I like to hit the gym, whenever I am free. Also, I like to hangout with friends,
   and also like to explore historical places.
@@ -165,31 +166,64 @@ target="_blank">
 
   <!-- Red Winged Bird Prediction -->
   <div class="item featured text-center">
-    <h3 class="title">Red Winged Bird Prediction</h3>
-    <h4><p class="summary">Third Best Prediction Result in a class of 76 students</p></h4>
-    <div class="featured-image" >
+    <h3 class="title"></h3>
 
-           <img class="img-responsive project-image" src="assets/images/projects/red-winged.jpg" alt="red-winged bird"/>
+    <h4><p class="summary">Information Retrieval System</p></h4>
+    <div class="featured-image" >
+           <img class="img-responsive project-image"
+           src="assets/images/projects/se.jpg" alt="search engine"/>
     </div>
-  </a>
+
   </div>
   <div class="desc text-left">
         <p>
-          Used Hadoop Map Reduce to solve Data Mining Classification problem of predicting a Red Winged Bird.
-          Used Apache's Machine Learning Weka library for implementing different classification models
-          like Naive Bayes, Random Trees, Random Forest. Prediction in parallel. Achieved an accuracy of 79.38%
+          The idea of the project is to build information retrieval systems,
+          evaluate and compare their performance levels in terms of retrieval effectiveness.
+          The dataset provided to us contains 3204 raw documents.
+          We used CACM test collection as our textual corpus, 64 unprocessed queries, Relevance judgments and a stop-list.
+          <ul>
+
+          <li> Developed search engines with BM25, Lucene, tf.idf, query likelihood as retrieval models.</li>
+          <li>Performed Query Expansion techniques on BM25 and tf.idf using Pseudo-Relevance Feedback approach.</li>
+          <li>Performed Stopping, Stemming and indexed the stemmed version of the corpus that was provided to us and performed query by query analysis on all the models.</li>
+          <li>A total of 11 distinct runs were generated to assess the performance of these search engines.</li>
+          </ul>
+          Following parameters were used to evaluate the efficiency and effectiveness of the different retrieval models:-
+          <ol>
+            <li> Mean Average Precision </li>
+            <li> Mean Reciprocal Rank </li>
+            <li> p@K, K = 5 and 20 </li>
+            <li> Precision and Recall </li>
+          </ol>
         </p>
   </div><!--//desc-->
   <!--//item-->
 
   <hr class="divider" />
 
+<!-- Red Winged Bird -->
+<div class="item featured text-center">
+  <h3 class="title">Red Winged Bird Prediction</h3>Third Best Prediction Result in a class of 76 studentsWinner for Best Overall App at ATT Hackathon</p></h4>
+  <div class="featured-image" >
+         <img class="img-responsive project-image" src="assets/images/projects/red-winged.jpg" alt="Red Winged Prediction"/>
 
+  </div>
+
+  <div class="desc text-left">
+        <p>
+          Used Hadoop Map Reduce to solve Data Mining Classification problem of predicting a Red Winged Bird.
+          Used Apache's Machine Learning Weka library for implementing different classification models
+          like Naive Bayes, Random Trees, Random Forest. Prediction in parallel. Achieved an accuracy of 79.38%
+        </p>
+  </div>
+</a>
+</div>
+<!-- End of Red Winged Bird -->
 
 <!-- Smart Chef App -->
 <div class="item featured text-center">
   <h3 class="title">Smart Chef</h3>
-  <h4><p class="summary">Winner for Best Overall App at AT&T Hackathon</p></h4>
+  <h4><p class="summary">Winner for Best Overall App at ATT Hackathon</p></h4>
    <a href="http://smartchef-bichkarmukul.rhcloud.com/" target="_blank">
   <div class="featured-image" >
 
@@ -389,13 +423,13 @@ target="_blank">
 
 <!-- Co-Op Experience -->
 <div class="item">
-  <h3 class="title">Cloud Software Engineer Co-Op - <span class="place"><a href="#">New York Labs, NYC</a></span> <span class="year">(Jan 2017 - Present) </span></h3>
+  <h3 class="title">Cloud Software Engineer Co-Op - <span class="place"><a href="#">New York Labs, NYC</a></span> <span class="year">(Jan 2017 - Aug 2017) </span></h3>
   <p>
-     Developing Serverless Cloud Applications using Angular 2 and Amazon Web Services such as Lambda, Dynamo
+     Developed Serverless Cloud Applications using Angular 2 and Amazon Web Services such as Lambda, Dynamo
      DB, S3 that automated the existing work processes and improved the operations time by 66%
-     Creating GraphQL endpoints that optimized the number of RESTful endpoints by 25%
-     Deploying MicroServices using Docker and collaborated with a team that designed the data model from scratch
-     Lead a team of 4 developers by conducting demos and meetings with Chief Technology Officer (CTO)
+     Created GraphQL endpoints that optimized the number of RESTful endpoints by 25%
+     Deployed MicroServices using Docker and collaborated with a team that designed the data model from scratch
+     Led a team of 4 developers by conducting demos and meetings with Chief Technology Officer (CTO)
   </p>
 </div><!--//item -->
 
@@ -404,8 +438,8 @@ target="_blank">
   <h3 class="title">Head Teaching Assistant (CS 1100) <span class="year">(Sept 2016 - Dec 2016)</span></h3>
  <!-- <h3 class="title">Promoted to Head Teaching Assistant <span class="year">(Sept. 2016 - Dec 2016)</span></h3> -->
   <p>
-    Developed an anti-plagiarism tool that caused a reduction in reported plagiarism cases by 28%
-    Conducted office hours, tutored students and contributed to online discussions for a class of 450 students
+    Developed an anti-plagiarism tool that resulted in reduction of reported plagiarism cases by 28%
+    Conducted office hours, tutored students and contributed to online discussions for 450 students
   </p>
 </div><!--//item-->
 
@@ -457,7 +491,7 @@ target="_blank">
    -->
 
    <!-- Co-Op Location Current form Jan-Aug 2017 -->
-  <li><em class="fa fa-map-marker"></em><span class="sr-only">Location:</span>New York City, US</li>
+  <li><em class="fa fa-map-marker"></em><span class="sr-only">Location:</span>San Jose, CA, US</li>
   <!--School Mail Address -->
   <li><em class="fa fa-envelope-o"></em><span class="sr-only">Email:</span><a href="mailto:bichkar.m@husky.neu.edu">bichkar.m@husky.neu.edu</a></li>
   <li><em class="fa fa-envelope-o"></em><a href="mailto:mukulbichkar@hotmail.com">mukulbichkar@hotmail.com</a></li>
@@ -474,7 +508,7 @@ target="_blank">
 <div class="content">
 <div class="item">
   <h3 class="title"><em class="fa fa-graduation-cap"></em> Masters in Computer Science</h3>
-  <h4 class="university">Northeastern University<span class="year">(2015-Present)</span></h4>
+  <h4 class="university">Northeastern University<span class="year">(2015-2017)</span></h4>
 </div><!--//item-->
 <div class="item">
   <h3 class="title"><em class="fa fa-graduation-cap"></em> B.E. Electronics & Tele-communication</h3>
@@ -610,11 +644,14 @@ target="_blank">
 <div class="section-inner">
 <h2 class="heading">Resume</h2>
 <div class="content">
-<a class="btn btn-ctb-primary btn-download" href="https://drive.google.com/uc?export=download&id=0BzhJtAIKBDnMMkp3MmNjYVA5QWM">
-  <em class="fa fa-download"></em>Download </a>
+<a class="btn btn-ctb-primary btn-download" href="https://drive.google.com/uc?export=download&id=15xrngdy0o8kwwvr9nlsM_PE5N-j6O3Ew">
+<em class="fa fa-download"></em>Download </a>
 </div><!--//content-->
 </div><!--//section-inner-->
 </aside><!--//section-->
+
+
+
 
 <!-- End of Resume -->
 
